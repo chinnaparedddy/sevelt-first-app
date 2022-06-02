@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>sevelt-first-app</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>create.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<context-param>
+	<param-name>Petrol</param-name>
+	<param-value>yess</param-value>
+	</context-param>
+	<servlet>
+	<servlet-name>test</servlet-name>
+	<servlet-class>com.ty.first.Test</servlet-class>
+	<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/naresh</url-pattern>
+	
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/prasanth</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/karthik</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/uday</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	  <servlet-name>teacher</servlet-name>
+	  <servlet-class>com.ty.first.TeacherServelet</servlet-class>
+	  <load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>teacher</servlet-name>
+	<url-pattern>/myteacher</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	  <servlet-name>students</servlet-name>
+	  <servlet-class>com.ty.first.StudentServlet</servlet-class>
+	<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	
+	<servlet-name>students</servlet-name>
+	<url-pattern>/mystudent</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>myfirstPerson</servlet-name>
+		<servlet-class>com.ty.first.Person</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>myfirstPerson</servlet-name>
+		<url-pattern>/person</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>myhotel</servlet-name>
+		<servlet-class>com.ty.first.Hotel</servlet-class>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myhotel</servlet-name>
+		<url-pattern>/hotel</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>myRoom</servlet-name>
+		<servlet-class>com.ty.first.Room</servlet-class>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myRoom</servlet-name>
+		<url-pattern>/room</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>mybed</servlet-name>
+		<servlet-class>com.ty.first.Bed</servlet-class>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mybed</servlet-name>
+		<url-pattern>/bed</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>myperson</servlet-name>
+		<servlet-class>com.ty.first.MyData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myperson</servlet-name>
+		<url-pattern>/mydarling</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Person Details -->
+	<servlet>
+		<servlet-name>mydata</servlet-name>
+		<servlet-class>com.ty.first.PersonDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mydata</servlet-name>
+		<url-pattern>/myform</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>student</servlet-name>
+		<servlet-class>com.ty.first.Student</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>student</servlet-name>
+		<url-pattern>/Details</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>car</servlet-name>
+	<servlet-class>com.ty.first.Car</servlet-class>
+	<init-param>
+	<param-name>RoadTax</param-name>
+	<param-value>18.5</param-value>
+	</init-param>
+	<init-param>
+	<param-name>SeatBelt</param-name>
+	<param-value>yess</param-value>
+	</init-param>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>car</servlet-name>
+	<url-pattern>/mycar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>bike</servlet-name>
+	<servlet-class>com.ty.first.Bike</servlet-class>
+	<init-param>
+	<param-name>RoadTax</param-name>
+	<param-value>18.5</param-value>
+	</init-param>
+	<init-param>
+	<param-name>Helmate</param-name>
+	<param-value>yess</param-value>
+	</init-param>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>bike</servlet-name>
+	<url-pattern>/mybike</url-pattern>
+	</servlet-mapping>
+
+</web-app>
